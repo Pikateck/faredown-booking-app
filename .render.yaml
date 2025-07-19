@@ -2,10 +2,9 @@ services:
   - type: web
     name: faredown-booking-app
     env: node
-    repo: https://github.com/Pikateck/faredown-booking-app
-    branch: main
-    buildCommand: npm install --include=dev && npm run build
-    startCommand: npm run start
+    buildCommand: "./build.sh"
+    startCommand: "node dist/server/production.mjs"
     envVars:
-      - key: NODE_ENV
-        value: production
+      - key: NODE_VERSION
+        value: 18
+
