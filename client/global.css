@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Faredown brand color system
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 214 31% 17%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 214 31% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 214 31% 17%;
+
+    --primary: 217 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 15% 95%;
+    --secondary-foreground: 214 31% 17%;
+
+    --muted: 210 15% 96%;
+    --muted-foreground: 214 16% 46%;
+
+    --accent: 30 100% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 90%;
+    --input: 214 20% 95%;
+    --ring: 217 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Faredown specific colors */
+    --faredown-blue: 217 100% 50%;
+    --faredown-orange: 30 100% 55%;
+    --faredown-green: 142 70% 45%;
+    --faredown-red: 0 75% 55%;
+    --faredown-gray: 214 16% 46%;
+    --faredown-light: 210 15% 96%;
+
+    /* Price trend colors */
+    --price-up: 0 75% 55%;
+    --price-down: 142 70% 45%;
+    --price-neutral: 214 16% 46%;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 214 45% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 214 35% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 214 35% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 100% 60%;
+    --primary-foreground: 214 45% 6%;
+
+    --secondary: 214 25% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 214 25% 15%;
+    --muted-foreground: 215 25% 65%;
+
+    --accent: 30 100% 60%;
+    --accent-foreground: 214 45% 6%;
+
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 25% 18%;
+    --input: 214 25% 15%;
+    --ring: 217 100% 60%;
+
+    /* Dark mode Faredown colors */
+    --faredown-blue: 217 100% 60%;
+    --faredown-orange: 30 100% 60%;
+    --faredown-green: 142 70% 50%;
+    --faredown-red: 0 75% 60%;
+    --faredown-gray: 215 25% 65%;
+    --faredown-light: 214 25% 15%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
