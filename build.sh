@@ -1,8 +1,9 @@
 #!/bin/bash
 set -e
 
-echo "🧹 Cleaning Vite cache..."
+echo "🧹 Full Vite cache wipe..."
 rm -rf node_modules/.vite
+rm -rf node_modules/vite-temp
 
 echo "🔧 Installing dependencies..."
 npm install
