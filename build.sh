@@ -1,15 +1,11 @@
 #!/bin/bash
 set -e
 
-echo "🧹 Wiping Vite caches..."
-rm -rf node_modules/.vite
-rm -rf node_modules/vite-temp
-
-echo "📦 Installing dependencies..."
+echo "🔧 Installing dependencies..."
 npm install
 
-echo "🛠 Building client..."
+echo "⚙️ Building client with Vite..."
 npx vite build
 
-echo "🔧 Building server..."
+echo "🛠 Building server with Vite server config..."
 npx vite build --config vite.config.server.ts
